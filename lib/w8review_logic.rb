@@ -23,6 +23,12 @@ class Word
         end
       end
       # if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
+      #   compare = @word1 - @word2
+      #   if compare == 0 
+      #     answer.push("Congratulations! You've found a anagram!")
+      #   elsif compare > 0 
+      #     answer.push("One of these things are not like the other, please try again!")
+      #   end 
     else
       answer.push(false)
     end 
