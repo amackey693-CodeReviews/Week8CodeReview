@@ -6,7 +6,7 @@
 
 ## Description
 
-__ 
+_This application will allow the user to enter two words and return a true or false statement to them. True if the two words are anagrams, false if they are not._ 
 
 ## Setup/Installation Requirements
 
@@ -36,7 +36,7 @@ _No known bugs at this time_
 
 ## Support and contact details
 
-_If you have any questions or any issues please feel free to submit an issue here: https://github.com/amackey693/coin-combo.git/issues_
+_If you have any questions or any issues please feel free to submit an issue here: https://github.com/amackey693/Week8CodeReview.git_
 
 ## Technologies Used
 
