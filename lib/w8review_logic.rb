@@ -10,9 +10,9 @@ class Word
   def anagram?
     compare = @word1 - @word2
     if compare == []
-      true
-    elsif compare.length > 1
-      false
+     return true
+    else
+     return false
     end
   end
 end

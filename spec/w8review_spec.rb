@@ -6,7 +6,7 @@ describe('#Word') do
     words = Word.new("read","dear")
     expect(words.anagram?).to(eq(true))
   end
-  it("checks to see if word1 & word2 are equal to one another if they are not resturns false") do 
+  it("checks if word1 & word2 are equal to one another if they are not resturns false") do 
     words = Word.new("rad","dad")
     expect(words.anagram?).to(eq(false))
   end
