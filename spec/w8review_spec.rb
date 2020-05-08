@@ -17,4 +17,5 @@ describe('#Word') do
   it("checks to see if the two items contain the same letters") do 
     words = Word.new("read","dear")
     expect(words.anagram?).to(eq("Congratulations! You've found a anagram!"))
+  end
 end 

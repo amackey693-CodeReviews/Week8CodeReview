@@ -9,7 +9,24 @@ class Word
 
   def anagram?
     answer = []
-    if @word1.length == @word2.length ## checks to see that the words are the same length 
+    vowels = { true => ["e", "i", "o", "u"]}
+
+    if @word1.include?(vowels)
+      puts "yes"
+    end
+    if @word2.include?(vowels)
+      puts "yes"
+    end
+    binding.pry
+
+    compare = @word1 - @word2
+    
+    if compare.length == [] #checks to see that word 1 & word2 contain the same letters
+      answer = "Congratulations! You've found a anagram!")
+    elsif compare.length > 0 
+      answer = ("One of these things are not like the other, please try again!")
+    end 
+  
      @word1.each_with_index do |ltr| ## checks to see if word #1 conatins vowels
         if word?.include?(ltr)
           answer.push(word?.fetch(ltr))
@@ -22,16 +39,13 @@ class Word
           answer.push(false)
         end
       end
-      # if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
-      #   compare = @word1 - @word2
-      #   if compare == 0 
-      #     answer.push("Congratulations! You've found a anagram!")
-      #   elsif compare > 0 
-      #     answer.push("One of these things are not like the other, please try again!")
-      #   end 
+      if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
+        
+      end 
     else
       answer.push(false)
     end 
+    binding.pry
     answer[0]
   end
   
