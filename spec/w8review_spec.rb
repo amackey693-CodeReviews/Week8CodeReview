@@ -10,10 +10,10 @@ describe('#Word') do
     words = Word.new("rad","dad")
     expect(words.anagram?).to(eq(false))
   end
-  # it("checks to see if word1 & word2 contain a vowel") do 
-  #   words = Word.new("read","dear")
-  #   expect(words.anagram?).to(eq(true))
-  # end
+  it("checks to see if word1 & word2 contain a vowel") do 
+    words = Word.new("read","dear")
+    expect(words.anagram?).to(eq(true))
+  end
   # it("checks to see if word1 & word2 do not contain the same letters method returns error statement") do 
   #   words = Word.new("rpg","slk")
   #   expect(words.anagram?).to(eq("One of these things are not like the other, please try again!"))

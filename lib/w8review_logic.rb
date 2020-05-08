@@ -9,7 +9,9 @@ class Word
 
   def anagram?
     compare = @word1 - @word2
+    # vowels = ["a", "e", "i", "o", "u"]
     if compare == []
+      
      return true
     else
      return false
