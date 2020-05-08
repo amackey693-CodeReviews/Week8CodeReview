@@ -18,13 +18,8 @@ describe('#Word') do
     words = Word.new("gRAB","BRAG")
     expect(words.anagram?).to(eq("Congrats! You've found an anagram!"))
   end
-
-  # it("checks to see if word1 & word2 do not contain the same letters method returns error statement") do 
-  #   words = Word.new("rpg","slk")
-  #   expect(words.anagram?).to(eq("One of these things are not like the other, please try again!"))
-  # end
-  # it("checks to see if the two items contain the same letters") do 
-  #   words = Word.new("read","dear")
-  #   expect(words.anagram?).to(eq("Congratulations! You've found a anagram!"))
-  # end
+  it("accounts for antigrams and returns statement") do 
+    words = Word.new("look","star")
+    expect(words.anagram?).to(eq("Well, that's not an anagram but it looks like you've found an antigram!"))
+  end
 end 
