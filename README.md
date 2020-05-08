@@ -21,11 +21,11 @@ _This application will allow the user to enter two words and return a true or fa
 
 |   Behavior Description        |
 |-------------------------------|
-| 1. Allows user to input two words []|
-| 2. Splits each word into an array []|
-| 3. Iterates over each ltr of the array to compare[]|
-| 4. Returns true if they contain the same letters []|
-| 5. Returns false if they do not contain the same letters []|
+| 1. Allows user to input two words [X]|
+| 2. Splits each word into an array [X]|
+| 3. Iterates over each ltr of the array to compare[X]|
+| 4. Returns true if they contain the same letters [X]|
+| 5. Returns false if they do not contain the same letters [X]|
 | 6. Accounts for case sensitivity []|
 | 7. Accounts for multiple words w/ spaces & punctuations []|
 
