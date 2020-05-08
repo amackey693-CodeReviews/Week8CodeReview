@@ -10,4 +10,8 @@ describe('#Word') do
     words = Word.new("read", "dear")
     expect(words.word2).to(eq(['d', 'e', 'a', 'r'] ))
   end
+  it("compares first word to second word, if they contain the same letters test will pass") do 
+    words = Word.new("read", "dear")
+    expect(words.anagram?).to(eq(true))
+  end
 end 
