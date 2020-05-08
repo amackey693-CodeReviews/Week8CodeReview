@@ -23,7 +23,7 @@ describe('#Word') do
     expect(words.anagram?).to(eq("Well, that's not an anagram but it looks like you've found an antigram!"))
   end
   it("accounts for special characters and numbers. removes them from array") do 
-    words = Word.new("Dormitory!@#", "Dirty room123")
-    expect(words.remove_special_chars).to(eq("dormitory, dirty room"))
+    words = Word.new("Dormitory!@# ", "Dirty room123")
+    expect(words.remove_special_chars("Dormitory!@#")).to(eq(["d","o","r","m","i","t","o", "r", "y"]))
   end
 end 

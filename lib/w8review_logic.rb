@@ -7,10 +7,21 @@ class Word
     @word2 = word2.downcase.split('')
   end 
 
+  def remove_special_chars(array)
+    array = array.downcase.split('')
+    punctuation = ('!'...'?').to_a + [" ", "@"] 
+    if punctuation.any? {|i| array.include?(i)}
+      punctuation.each do |del|
+        array.delete(del)
+      end
+    end
+    array
+  end
+  
+
   def anagram?
     compare = @word1 - @word2
     vowels = ["a", "e", "i", "o", "u", "y"]
-    
     if compare == []
       if @word1.any? {|i| vowels.include?(i)} && @word2.any? {|i| vowels.include?(i)} 
         return "Congrats! You've found an anagram!"
