@@ -9,13 +9,13 @@ class Word
 
   def anagram?
     compare = @word1 - @word2
-    vowels 
     if compare == []
-      return true
+      true
     elsif compare.length > 1
-      return false
+      false
     end
   end
+end
   
   # def anagram?
   #   if  (vowels?(@word1) == true) && (vowels?(@word2) == true)
