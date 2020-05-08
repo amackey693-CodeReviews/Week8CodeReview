@@ -11,14 +11,15 @@ class Word
     @word1 = @word1.split('')
     @word2 = @word2.split('')
     if @word1.length == @word2.length
-      true
+      answer = true
     else
-      false
+      answer = false
     end 
+    answer
   end
   
-    def word?
-      vowels = {"a", "e", "i", "o", "u"}
+  def word?
+    vowels = {"a" => true, "e" => true, "i" => true, "o" => true, "u" => true}
   end 
 end 
 
