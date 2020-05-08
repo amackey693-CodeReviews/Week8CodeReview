@@ -3,12 +3,12 @@ require('pry')
 
 class Word 
   def initialize(word1, word2)
-    @word1 = word1.downcase.split('')
-    @word2 = word2.downcase.split('')
+    @word1 = remove_chars(word1)
+    @word2 = remove_chars(word2)
   end 
 
-  def remove_special_chars(array)
-    array = array.downcase.split('')
+  def remove_chars(word)
+    array = word.downcase.split('')
     punctuation = ('!'...'?').to_a + [" ", "@"] 
     if punctuation.any? {|i| array.include?(i)}
       punctuation.each do |del|
@@ -20,8 +20,9 @@ class Word
   
 
   def anagram?
-    compare = @word1 - @word2
     vowels = ["a", "e", "i", "o", "u", "y"]
+  
+    compare = @word1 - @word2
     if compare == []
       if @word1.any? {|i| vowels.include?(i)} && @word2.any? {|i| vowels.include?(i)} 
         return "Congrats! You've found an anagram!"

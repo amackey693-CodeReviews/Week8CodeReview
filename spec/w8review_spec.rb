@@ -24,6 +24,10 @@ describe('#Word') do
   end
   it("accounts for special characters and numbers. removes them from array") do 
     words = Word.new("Dormitory!@# ", "Dirty room123")
-    expect(words.remove_special_chars("Dormitory!@#")).to(eq(["d","o","r","m","i","t","o", "r", "y"]))
+    expect(words.remove_chars("Dormitory!@#")).to(eq(["d","o","r","m","i","t","o", "r", "y"]))
+  end
+  it("accounts for special characters and numbers. removes them from array") do 
+    words = Word.new("Dormitory!@# ", "Dirty room123")
+    expect(words.anagram?).to(eq("Congrats! You've found an anagram!"))
   end
 end 
