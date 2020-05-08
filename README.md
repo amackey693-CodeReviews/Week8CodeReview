@@ -21,13 +21,14 @@ __
 
 |   Behavior Description        |
 |-------------------------------|
-| 1.[]|
-| 2.[]|
-| 3.[]|
-| 4.[]|
-| 5.[]|
-| 6.[]|
-| 7.[]|
+| 1. Allows user to input two words []|
+| 2. Splits each word into an array []|
+| 3. Iterates over each ltr of the array to compare[]|
+| 4. Returns true if they contain the same letters []|
+| 5. Returns false if they do not contain the same letters []|
+| 6. Accounts for case sensitivity []|
+| 7. Accounts for multiple words w/ spaces & punctuations []|
+
 
 ## Known Bugs
 
