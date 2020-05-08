@@ -6,6 +6,16 @@ class Word
     @word1 = word1.split('')
     @word2 = word2.split('')
   end 
+
+  def anagram?
+    compare = @word1 - @word2
+    vowels 
+    if compare == []
+      return true
+    elsif compare.length > 1
+      return false
+    end
+  end
   
   # def anagram?
   #   if  (vowels?(@word1) == true) && (vowels?(@word2) == true)
