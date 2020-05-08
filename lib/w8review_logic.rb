@@ -16,8 +16,10 @@ class Word
       else
         return "Please enter a real word!!"
       end
-    else
-     return "One of these things are not like the other, please try again!"
+    elsif (@word1.any? {|i| @word2.include?(i)}) == false
+      return "Well, that's not an anagram but it looks like you've found an antigram!"
+    else 
+      return "One of these things are not like the other, please try again!"
     end
   end
 end
