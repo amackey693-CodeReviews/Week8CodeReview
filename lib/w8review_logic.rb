@@ -9,12 +9,18 @@ class Word
 
   def anagram?
     answer = []
-    if @word1.length == @word2.length
-     @word1.each_with_index do |ltr| 
+    if @word1.length == @word2.length ## checks to see that the words are the same length 
+     @word1.each_with_index do |ltr| ## checks to see if word #1 conatins vowels
         if word?.include?(ltr)
           answer.push(word?.fetch(ltr))
         end
       end
+      @word2.each_with_index do |ltr| ## checks to see if word #2 conatins vowels
+        if word?.include?(ltr)
+          answer.push(word?.fetch(ltr))
+        end
+      end
+      if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
     else
       answer.push(false)
     end 

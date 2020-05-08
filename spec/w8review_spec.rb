@@ -10,4 +10,8 @@ describe('#Word') do
     words = Word.new("read","dear")
     expect(words.anagram?).to(eq(true))
   end
+  it("checks to see if word1 & word2 do not contain a vowel that method returns false") do 
+    words = Word.new("rpg","slk")
+    expect(words.anagram?).to(eq(false))
+  end
 end 
