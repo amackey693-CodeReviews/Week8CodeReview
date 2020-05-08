@@ -4,15 +4,15 @@ require('w8review_logic')
 describe('#Word') do 
   it("checks to see if word1 & word2 are equal to one another") do 
     words = Word.new("read","dear")
-    expect(words.anagram?).to(eq(true))
+    expect(words.anagram?).to(eq("Congrats! You've found an anagram!"))
   end
-  it("checks if word1 & word2 are equal to one another if they are not resturns false") do 
+  it("checks if word1 & word2 are equal to one another if they are not method returns false statement") do 
     words = Word.new("rad","dad")
-    expect(words.anagram?).to(eq(false))
+    expect(words.anagram?).to(eq("One of these things are not like the other, please try again!"))
   end
   it("checks to see if word1 & word2 contain a vowel") do 
     words = Word.new("prg","rgp")
-    expect(words.anagram?).to(eq(false))
+    expect(words.anagram?).to(eq("Please enter a real word!!"))
   end
   # it("checks to see if word1 & word2 do not contain the same letters method returns error statement") do 
   #   words = Word.new("rpg","slk")
