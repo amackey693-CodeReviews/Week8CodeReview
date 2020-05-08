@@ -12,6 +12,9 @@ class Word
     @word1
   end 
 
-  
+  def word2
+    @word2 = @word2.split('')
+    @word2 
+  end
 
 end 
