@@ -3,19 +3,22 @@ require('pry')
 
 class Word 
   def initialize(word1, word2)
-    @word1 = word1
-    @word2 = word2
+    @word1 = word1.split('')
+    @word2 = word2.split('')
   end 
 
   def anagram?
-    @word1 = @word1.split('')
-    @word2 = @word2.split('')
+    answer = []
     if @word1.length == @word2.length
-      answer = true
+     @word1.each_with_index do |ltr| 
+        if word?.include?(ltr)
+          answer.push(word?.fetch(ltr))
+        end
+      end
     else
-      answer = false
+      answer.push(false)
     end 
-    answer
+    answer[0]
   end
   
   def word?
