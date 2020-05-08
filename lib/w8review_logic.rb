@@ -18,9 +18,11 @@ class Word
       @word2.each_with_index do |ltr| ## checks to see if word #2 conatins vowels
         if word?.include?(ltr)
           answer.push(word?.fetch(ltr))
+        else 
+          answer.push(false)
         end
       end
-      if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
+      # if answer.include?(true) ## moves to next step in comparing to make sure letters are the same
     else
       answer.push(false)
     end 
