@@ -18,10 +18,8 @@ class Word
     array
   end
   
-
   def anagram?
     vowels = ["a", "e", "i", "o", "u", "y"]
-  
     compare = @word1 - @word2
     if compare == []
       if @word1.any? {|i| vowels.include?(i)} && @word2.any? {|i| vowels.include?(i)} 

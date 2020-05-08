@@ -1,4 +1,4 @@
-# __
+# _Anagram or Antigram?_
 
 #### _A practice application using Ruby, Gem & Pry. 5.8.2020_
 
@@ -27,7 +27,7 @@ _This application will allow the user to enter two words and return a true or fa
 | 4. Returns true if they contain the same letters [X]|
 | 5. Returns false if they do not contain the same letters [X]|
 | 6. Accounts for case sensitivity [X]|
-| 7. Accounts for multiple words w/ spaces & punctuations []|
+| 7. Accounts for multiple words w/ spaces & punctuations [X]|
 
 
 ## Known Bugs
@@ -43,7 +43,7 @@ _If you have any questions or any issues please feel free to submit an issue her
 _Ruby, Gem, Pry_ 
 
 
-### License
+### Licenses
 *MIT LICENSE*
 
-Copyright (c) 2020 **_Allison Macke_**
+Copyright (c) 2020 **_Allison Mackey_**
