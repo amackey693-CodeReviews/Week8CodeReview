@@ -10,6 +10,7 @@ class Word
   def anagram?
     compare = @word1 - @word2
     vowels = ["a", "e", "i", "o", "u", "y"]
+    
     if compare == []
       if @word1.any? {|i| vowels.include?(i)} && @word2.any? {|i| vowels.include?(i)} 
         return "Congrats! You've found an anagram!"
