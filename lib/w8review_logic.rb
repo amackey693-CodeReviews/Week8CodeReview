@@ -3,8 +3,8 @@ require('pry')
 
 class Word 
   def initialize(word1, word2)
-    @word1 = word1.split('')
-    @word2 = word2.split('')
+    @word1 = word1.downcase.split('')
+    @word2 = word2.downcase.split('')
   end 
 
   def anagram?
