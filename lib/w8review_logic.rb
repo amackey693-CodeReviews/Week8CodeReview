@@ -7,31 +7,31 @@ class Word
     @word2 = word2.split('')
   end 
   
-  def anagram?
-    if  (vowels?(@word1) == true) && (vowels?(@word2) == true)
-      compare = @word1 - @word2
-      if compare.length == [] #checks to see that word 1 & word2 contain the same letters
-        answer = "Congratulations! You've found a anagram!"
-      elsif compare.length > 0 
-        answer = "One of these things are not like the other, please try again!"
-      end 
-    elsif 
-      answer = "One of these things are not like the other, please try again!"
-    end
-    answer
-  end 
+  # def anagram?
+  #   if  (vowels?(@word1) == true) && (vowels?(@word2) == true)
+  #     compare = @word1 - @word2
+  #     if compare.length == [] #checks to see that word 1 & word2 contain the same letters
+  #       answer = "Congratulations! You've found a anagram!"
+  #     elsif compare.length > 0 
+  #       answer = "One of these things are not like the other, please try again!"
+  #     end 
+  #   elsif 
+  #     answer = "One of these things are not like the other, please try again!"
+  #   end
+  #   answer
+  # end 
 
-  def vowels?(array)
-    array.each_with_index do |ltr| 
-      if find_vowels.include?(ltr)
-        return true
-      else
-        return false
-      end
-    end
-  end
-
-  def find_vowels
-   vowels = {"a" => true, "e" => true, "i" => true, "o" => true, "u" => true}
-  end
-end 
+#   def vowels?(array)
+#     array.each_with_index do |ltr| 
+#       if find_vowels.include?(ltr)
+#         return true
+#       else
+#         return false
+#       end
+#     end
+#   end
+     
+#   def find_vowels
+#    vowels = {"a" => true, "e" => true, "i" => true, "o" => true, "u" => true}
+#   end
+# end 
